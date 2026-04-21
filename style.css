@@ -1,0 +1,219 @@
+*, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background-color: #f5f2ec;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 60px 20px;
+      font-family: 'IM Fell English', serif;
+
+      background-image: url('./img/background.jpg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+
+    /* Wrapper que contiene post-its + hoja juntos */
+    .conjunto {
+      position: relative;
+      width: 924px;
+      flex-shrink: 0;
+    }
+
+    /* Banda superior donde viven los post-its*/
+    .postits {
+      position: relative;
+      height: 110px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      gap: 18px;
+      z-index: 1;
+      padding: 0 0 0 80px;
+      margin-bottom: -30px;
+      overflow: visible;
+    }
+
+    .postit {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      flex-shrink: 0;
+
+      cursor: pointer;
+      transform-origin: bottom center;
+      transition: transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1), z-index 0s;
+      z-index: 1;
+    }
+
+    .postit-rosa {
+        background-image: url('./img/postit-rosa.png');
+    }
+
+    .postit-amarillo {
+        background-image: url('./img/postit-amarillo.png');
+    }
+
+    .postit-verde {
+        background-image: url('./img/postit-verde.png');
+    }
+
+    .postit-naranja {
+        background-image: url('./img/postit-naranja.png');
+    }
+
+    .postit:hover {
+      transform: translateY(-20px) scale(1.07);
+      z-index: 10;
+    }
+
+    .postit a {
+      font-family: 'Caveat', cursive;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #5a2d2d;
+      text-decoration: none;
+      position: absolute;
+      top: 22px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      line-height: 1.2;
+    }
+
+    .postit:hover a {
+      color: #3b1a1a;
+    }
+
+    .pagina {
+      position: relative;
+      z-index: 2;
+      width: 924px;
+      height: 1280px;
+      flex-shrink: 0;
+
+      /* Imagen de fondo — sin repetición, cubre toda la hoja */
+      background-image: url('./img/fondo2.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
+
+    /* Capa semitransparente muy sutil para mejorar legibilidad del texto */
+    .pagina::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(245, 238, 220, 0.08);
+      border-radius: inherit;
+      pointer-events: none;
+    }
+
+    /* Ocultar todas las páginas por defecto */
+    .pagina-contenido {
+        display: none;
+        animation: fadeIn 0.4s ease-in-out;
+    }
+
+    /* Mostrar únicamente la página que recibe la clase activa desde el JS */
+    .pagina-contenido.activa {
+        display: block;
+    }
+
+    .contenido {
+      position: relative;
+      z-index: 1;
+      padding: 70px 80px 80px 140px; /* más margen izquierdo por las flores */
+    }
+
+    h1 {
+      font-family: 'Caveat', cursive;
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #3b2510;
+      margin-bottom: 0.3em;
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+    }
+
+    .subtitulo {
+      font-family: 'Caveat', cursive;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #7a4e2d;
+      margin-bottom: 2.2em;
+      font-style: italic;
+    }
+
+    /* Línea decorativa bajo el título */
+    .separador {
+      width: 120px;
+      height: 1px;
+      background: linear-gradient(to right, #a0704a, transparent);
+      margin-bottom: 2em;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.9;
+      color: #2e1c0e;
+      margin-bottom: 1.4em;
+      text-align: justify;
+      hyphens: auto;
+    }
+
+    p:first-of-type::first-letter {
+      font-family: 'Caveat', cursive;
+      font-size: 3.5rem;
+      font-weight: 700;
+      float: left;
+      line-height: 0.75;
+      margin-right: 6px;
+      margin-top: 6px;
+      color: #6b3a1f;
+    }
+
+    em {
+      font-style: italic;
+      color: #5a3018;
+    }
+
+    /* Estilos básicos para la interfaz de los controles */
+    .controles-paginacion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+        font-family: 'Caveat', cursive;
+        font-size: 1.2rem;
+    }
+
+    .controles-paginacion button {
+        background: transparent;
+        border: 1px solid #a0704a;
+        color: #7a4e2d;
+        padding: 5px 15px;
+        cursor: pointer;
+        border-radius: 4px;
+        font-family: inherit;
+        transition: background 0.2s;
+    }
+
+    .controles-paginacion button:hover {
+        background: #a0704a;
+        color: #f5f2ec;
+    }
+
+    /* Animación sutil para el cambio de página */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(5px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
