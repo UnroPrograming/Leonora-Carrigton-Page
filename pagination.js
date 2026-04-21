@@ -1,8 +1,8 @@
 const secciones = [
   { id: 'Portada',      paginas: 1 },
-  { id: 'Biografía',    paginas: 3 },
-  { id: 'Curiosidades', paginas: 2 },
-  { id: 'Exposición',   paginas: 6 },
+  { id: 'Biografía',    paginas: 4 },
+  { id: 'Exposición',   paginas: 1 },
+  { id: 'Curiosidades', paginas: 1 },
 ];
 
 let seccionActual = 0;
@@ -29,13 +29,13 @@ function mostrar(sec, pag) {
         ?.classList.add('activo');
 
     //UX: Desplazamiento automático hacia la parte superior de la libreta
-    const contenedorPrincipal = document.querySelector('.conjunto');
-    if (contenedorPrincipal) {
-        contenedorPrincipal.scrollIntoView({ 
-            behavior: 'smooth', // Animación de desplazamiento fluido
-            block: 'start'      // Alinea la parte superior del elemento con la ventana
-        });
-    }
+    // const contenedorPrincipal = document.querySelector('.conjunto');
+    // if (contenedorPrincipal) {
+    //     contenedorPrincipal.scrollIntoView({ 
+    //         behavior: 'smooth', // Animación de desplazamiento fluido
+    //         block: 'start'      // Alinea la parte superior del elemento con la ventana
+    //     });
+    // }
 }
 
 document.getElementById('btn-siguiente').addEventListener('click', () => {

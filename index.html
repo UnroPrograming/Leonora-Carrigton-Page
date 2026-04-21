@@ -5,152 +5,221 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Leonora Carrington</title>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet">
   <link href="./style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
     <div class="conjunto">
         <div class="postits">
-            <div class="postit postit-rosa">
-                <a href="#biografia">Portada</a>
+            <div class="postit postit-morado" data-seccion="Portada">
+                <a href="#portada">Portada</a>
             </div>
-            <div class="postit postit-verde">
-                <a href="#obra">Biografía</a>
+            <div class="postit postit-verde" data-seccion="Biografía">
+                <a href="#biografia">Biografía</a>
             </div>
-                <div class="postit postit-naranja">
-            <a href="#escritura">Curiosidades</a>
+            <div class="postit postit-amarillo" data-seccion="Exposición">
+                <a href="#exposicion">Exposición</a>
             </div>
-                <div class="postit postit-amarillo">
-            <a href="#legado">Exposición</a>
+            <div class="postit postit-naranja" data-seccion="Curiosidades">
+                <a href="#curiosidades">Curiosidades</a>
+            </div>
+            <div class="postit postit-rojo">
+                <a href="#test">Test</a>
             </div>
         </div>
         <article class="pagina">
             <div class="contenido">
+
+                <!-- PORTADA -->
                 <div class="pagina-contenido" data-seccion="Portada" data-pagina="0">
                     <h1>PORTADA</h1>
-                    <p class="subtitulo">Pintora, escritora y figura del surrealismo</p>
                     <div class="separador"></div>
 
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </p>
+                    <figure class="img-pagina">
+                        <img src="./img/biografia.png" alt="La gigante, 1947" />
+                        <figcaption>La gigante, 1947</figcaption>
+                    </figure>
 
                     
                 </div>
+
+                <!-- BIOGRAFÍA -->
                 <div class="pagina-contenido" data-seccion="Biografía" data-pagina="0">
-                    <h1>Leonora Carrington</h1>
-                    <p class="subtitulo">Pintora, escritora y figura del surrealismo</p>
+                    <h1>Biografía</h1>
+                    <p class="subtitulo">Infancia y adolescencia</p>
                     <div class="separador"></div>
 
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        La infancia de Leonora Carrington se desarrolló en un ambiente de privilegio económico, 
+                        pero también de rigidez social y emocional que marcaría profundamente su carácter y su obra. 
+                        Nació en 1917 en Lancashire, en el seno de una familia inglesa acomodada: su padre era un poderoso industrial textil, 
+                        representante de los valores conservadores de la alta sociedad británica, mientras que su madre, de origen irlandés, 
+                        aportaba un mundo muy distinto, lleno de relatos mágicos, leyendas celtas y 
+                        tradiciones populares que despertaron desde muy temprano la imaginación de la niña.
+                    </p>
+                    
+                    <img class="img-flotante-derecha img-pequeña" src="./img/biografia.png" alt="La gigante, 1947" />
+                    <p>
+                       Desde pequeña, Leonora mostró una personalidad inconformista y difícil de encajar en el modelo femenino de su época. 
+                       Mientras su familia esperaba que adoptara un comportamiento disciplinado y refinado, propio de su clase social, 
+                       ella reaccionaba con rebeldía, desobediencia y una actitud crítica hacia la autoridad. Esta tensión constante con su entorno se reflejó 
+                       en su trayectoria escolar: fue expulsada de varios colegios católicos e internados, incapaz de adaptarse a la estricta educación religiosa 
+                       y a las normas rígidas que se le imponían.
                     </p>
 
                     <p>
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum. <em>Curabitur pretium tincidunt lacus.</em> Nulla gravida orci a odio.
-                        Nullam varius, turpis molestie dictum semper, nulla nunc varius lorem, at semper nibh
-                        ligula non justo.
+                       A pesar de los intentos de su familia por moldearla, su imaginación seguía creciendo al margen de esas imposiciones. 
+                       Las historias que escuchaba de su madre —pobladas de criaturas fantásticas, espíritus y 
+                       mundos invisibles— se mezclaban con sus propias experiencias en las grandes casas familiares, 
+                       llenas de objetos, animales y espacios que más tarde reaparecerían transformados en sus pinturas y relatos. 
+                       Para Carrington, la infancia no era solo una etapa, sino una fuente permanente de imágenes y 
+                       símbolos: como ella misma sugería, no inventaba, sino que recordaba.
+
                     </p>
 
                     <p>
-                        Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet
-                        iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer
-                        eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc.
-                        Nunc nonummy metus. Vestibulum volutpat pretium libero.
+                        En su adolescencia, sus padres intentaron reconducir su comportamiento enviándola al extranjero, 
+                        primero a Florencia y después a París. Sin embargo, estas experiencias no lograron someter su espíritu independiente. 
+                        De hecho, reforzaron su deseo de escapar del destino que su familia había trazado para ella. Un momento especialmente 
+                        significativo fue su presentación en la corte del rey Jorge V en 1934, un acto social que simbolizaba su entrada oficial 
+                        en la alta sociedad inglesa. Lejos de asumirlo como un honor, Carrington lo vivió como una imposición absurda y opresiva, 
+                        experiencia que más tarde transformaría en una sátira literaria.
                     </p>
 
-                    <p>
-                        Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit
-                        amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus.
-                        Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc
-                        nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi.
-                    </p>
-
-                    <p>
-                        Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas
-                        malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere
-                        vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus
-                        orci luctus et ultrices posuere cubilia curae.
-                    </p>
-
-                    <p>
-                        Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit
-                        amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus.
-                        Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc
-                        nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi.
-                    </p>
-
-                    <p>
-                        Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas
-                        malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere
-                        vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus
-                        orci luctus et ultrices posuere cubilia curae.
-                    </p>
                 </div>
 
                 <div class="pagina-contenido" data-seccion="Biografía" data-pagina="1">
-                    <h1>Página 1</h1>
-                    <p class="subtitulo">Pintora, escritora y figura del surrealismo</p>
-                    <div class="separador"></div>
-
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        El periodo de infancia de Leonora Carrington estuvo marcado por una dualidad constante: por un lado, el mundo ordenado, 
+                        autoritario y elitista de su familia; por otro, el universo libre, mágico y subversivo que ella construía a partir de su 
+                        imaginación. Este conflicto no solo definió su personalidad rebelde, sino que también se convirtió en el motor de su creación artística. 
+                        Sus obras posteriores —llenas de animales simbólicos, metamorfosis y escenas oníricas— pueden entenderse como una prolongación 
+                        de esa infancia en la que la fantasía funcionaba como vía de escape frente a una realidad que sentía ajena.
                     </p>
 
-                    <p>
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum. <em>Curabitur pretium tincidunt lacus.</em> Nulla gravida orci a odio.
-                        Nullam varius, turpis molestie dictum semper, nulla nunc varius lorem, at semper nibh
-                        ligula non justo.
-                    </p>
-
-                    <p>
-                        Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet
-                        iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer
-                        eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc.
-                        Nunc nonummy metus. Vestibulum volutpat pretium libero.
-                    </p>
+                    <figure class="img-pagina">
+                        <img src="./img/biografia.png" alt="La gigante, 1947" />
+                        <figcaption>La gigante, 1947</figcaption>
+                    </figure>
 
                 </div>
 
                 <div class="pagina-contenido" data-seccion="Biografía" data-pagina="2">
-                    <h1>Página 3</h1>
-                    <p class="subtitulo">Pintora, escritora y figura del surrealismo</p>
+                    <p class="subtitulo">Adultez, formación y educación e influencias artísticas</p>
                     <div class="separador"></div>
 
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        La educación de Leonora Carrington estuvo desde el inicio marcada por la estricta educación católica y conservadora inglesa que le daba su padre y la rebeldía hacia esta que Leonora mostró desde su juventud. La educación propia de la alta sociedad le desagradaba sobremanera, y sin duda la rigidez y el estricto control que ejercía su padre marcó su personalidad rebelde y libre, que luego plasmó en sus pinturas.
+                    </p>
+
+                    <img class="img-flotante-izquierda img-pequeña" src="./img/biografia.png" alt="La gigante, 1947" />
+
+                    <p>
+                        Al principio su educación fue en casa, donde se impregnó de la influencia Celta gracias a los relatos y leyendas que le contaban. Después fue enviada a internados como New Hall y St. Mary´s Ascot en Inglaterra, aunque fue expulsada. En 1932, es obligada a ingresar en la escuela de buenos modales para señoritas Miss Penrose School Girls, en Florencia, Italia, lo cual, irónicamente, le permitió estar en estrecho contacto con las grandes galerías de arte, pasión sobre la cual su padre se mostraba abiertamente en contra.
                     </p>
 
                     <p>
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum. <em>Curabitur pretium tincidunt lacus.</em> Nulla gravida orci a odio.
-                        Nullam varius, turpis molestie dictum semper, nulla nunc varius lorem, at semper nibh
-                        ligula non justo.
+                        En 1936, gracias en buena parte a la comprensión de su madre, ingresa a estudiar arte en la Academia Ozenfant en Londres, donde descubre por primera vez el surrealismo y la obra de Max Ernst, de quien se enamorará poco después al conocerle en una fiesta en 1937, y tras lo cual tendrán un intenso romance.
                     </p>
 
                     <p>
-                        Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet
-                        iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer
-                        eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc.
-                        Nunc nonummy metus. Vestibulum volutpat pretium libero.
+                        Ya con su nuevo amante es donde dará rienda suelta a su creatividad surrealista, primero en París, donde conocerá al grupo de surrealistas de André Bretón, Pablo Picasso, Salvador Dalí y Joan Miró, entre otros; y después en Saint Martin d´Ardèche, donde aprenderá distintas técnicas de Ernst, sin duda pieza clave en su formación artística.
                     </p>
 
-                    
+                    <p>
+                        Por otra parte, la adultez de Leonora Carrington fue intensa y trágica, marcada por la guerra, la crisis personal, y que, además, se vio enormemente influenciada por su intensa relación con Max Ernst, que fue tanto amorosa como artística. Carrington y Ernst se conocieron en París, volviéndose amantes y trasladándose juntos al sur de Francia (Saint Martin d'Ardèche),   donde vivieron un periodo creativo y artístico en el que se apoyaron e inspiraron mutuamente. Esta relación, además, fue la fuente de inspiración clave en varios de sus relatos, de carácter autobiográfico, que se reflejan mediante la técnica del roman à clef, es decir, una narración en la que personas y hechos reales aparecen transformados bajo una fachada de ficción, una forma de autoficción. Por ejemplo, en obras como Little Francis y Waiting, donde Carrington convierte sus vivencias sentimentales en literatura.
+                    </p>
                 </div>
-            </div>
+
+                <div class="pagina-contenido" data-seccion="Biografía" data-pagina="3">
+                    <p>
+                        Cuando Max Ernst fue arrestado por los nazis, sumado a crisis mentales y personales, Carrington sufrió una fuerte crisis emocional, que plasmó en Down Below. En este texto autobiográfico narra su internamiento en un sanatorio en Santander al huir de los nazis a España, explicando su locura como una especie de descenso a los infiernos.
+                    </p>
+
+                    <img class="img-flotante-derecha img-pequeña" src="./img/biografia.png" alt="La gigante, 1947" />
+
+                    <p>
+                        Después del sanatorio, logró escapar a los Estados Unidos con la ayuda del mexicano Renato Leduc; se casaron en Lisboa en 1940 para conseguir emigrar a Nueva York. Ya allí, volvió a ver brevemente a Max Ernst, pero su relación ya había terminado definitivamente.
+                        Finalmente, Carrington se estableció en México, donde vivió la mayor parte de su vida adulta, desarrollando plenamente su carrera artística y rodeándose de otros artistas como Remedios Varo.
+                    </p>
+
+                    <p>
+                        Por todo ello, las influencias artísticas de Leonora Carrington son muy diversas y se combinan para crear un universo único, donde la libertad y la creatividad son los elementos clave. La tradición y el mundo celta, presente desde la niñez de Carrington, esa convivencia entre el mundo terrenal y el Otherworld, el mundo sobrenatural; los seres mágicos y simbólicos; lo fantástico y lo onírico… Todo ello se encuentra muy presente en la obra de Carrington, marcando sus orígenes y los relatos que despertaban su curiosidad e imaginación desde la niñez.    
+                    </p>
+
+                    <p>
+                        Además, el movimiento surrealista, con figuras como André Bretón o su amante Max Ernst, que entra en contacto con ella en su juventud, fue ideal para encajar de manera artística ese mundo onírico que tenía en mente, donde el simbolismo y las figuras antropomorfas lograban crear esa sensación del “otro mundo”.    
+                    </p>
+                    
+                    <p>
+                        Por último, es importante destacar la parte autobiográfica de sus obras, donde activamente plasma episodios de su vida, como los horrores de la guerra, sus conflictos emocionales y amorosos y su crisis personal. Además, en sus obras realiza una clara crítica social hacia el rol tradicional de la mujer, criticando el amor dependiente y representando a las mujeres con una identidad propia, alejadas de los estereotipos.    
+                    </p>
+                </div>
+
+                <!-- EXPOSICIÓN -->
+                <div class="pagina-contenido" data-seccion="Exposición" data-pagina="0">
+                    <h1>Exposición</h1>
+                    <div class="separador"></div>
+
+                    <div class="galeria">
+                        <div class="obra obra-grande-izq" data-id="0">
+                            <img src="./img/cuadros/cuadro1.jpg" alt="La gigante" />
+                        </div>
+
+                        <div class="obra obra-pequeña-der-top" data-id="1">
+                            <img src="./img/cuadros/cuadro2.jpg" alt="La tentación de San Antonio" />
+                        </div>
+
+                        <div class="obra obra-pequeña-der-mid" data-id="2">
+                            <img src="./img/cuadros/cuadro3.jpg" alt="El mundo mágico de los mayas" />
+                        </div>
+
+                        <div class="obra obra-ancha-bot-izq" data-id="3">
+                            <img src="./img/cuadros/cuadro4.jpg" alt="Navegando" />
+                        </div>
+
+                        <div class="obra obra-mediana-bot-mid" data-id="4">
+                            <img src="./img/cuadros/cuadro5.jpg" alt="La casa de enfrente" />
+                        </div>
+
+                        <div class="obra obra-pequeña-bot-der" data-id="5">
+                            <img src="./img/cuadros/cuadro6.jpg" alt="Retrato del Baron Bergman" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CURIOSIDADES -->
+                <div class="pagina-contenido" data-seccion="Curiosidades" data-pagina="0">
+                    <h1>Curiosidades</h1>
+                    <div class="separador"></div>
+
+                    <p>- Desde niña, Leonora se identificaba con los caballos. Este animal aparece constantemente en su obra como símbolo de libertad, rebeldía e independencia.</p>
+                    <p>- Aunque formaba parte de la sociedad inglesa, rechazaba las normas abiertamente. Incluso se burló de su presentación en la corte del rey Jorge V cunado tenía 17 años, en 1937.</p>
+                    <p>- Mantuvo una relación amorosa con el pintor surrealista Marx Ernst, quien la retrató en varias de sus obras. Pero Leonora nunca quiso que la considerara su musa y, ciertamente, siempre quiso ser reconocida como artista independiente.</p>
+                    <p>- Durante la Segunda Guerra Mundial sufre una fuerte crisis estando en España. La misma es narrada en su libro Memorias de abajo (“Mémoires d’en bas” 1943).</p>
+                    <p>- Además de pintar, escribió textos llenos de humor y absurdo, que podían incluir recetas extrañas y fantásticas, como si la cocina fuera un ritual mágico.</p>
+                    <p>- Del mismo modo, su obra está repleta de referencias a la alquimia, la magia, el esoterismo y los sueños, elementos claves del surrealismo.</p>
+                    <p>- También, animales como los gatos y los caballos aparecen frecuentemente en su obra, asociados a lo femenino, lo enigmático y lo mágico.</p>
+
+                    <figure class="img-pagina">
+                        <img src="./img/leonora-vieja.jpg" alt="La gigante, 1947" />
+                    </figure>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal-overlay" id="modal">
+                    <div class="modal-ventana">
+                        <button class="modal-cerrar" id="modal-cerrar">&#10005;</button>
+                        <div class="modal-imagen">
+                            <img id="modal-img" src="" alt="" />
+                        </div>
+                        <div class="modal-info">
+                            <h2 id="modal-titulo"></h2>
+                            <div class="modal-año" id="modal-año"></div>
+                            <div id="modal-descripcion"></div>
+                        </div>
+                    </div>
+                </div>
         </article>
         <div class="controles-paginacion">
             <button id="btn-anterior">◀ Anterior</button>
@@ -162,3 +231,4 @@
 </body>
 
 <script src="./pagination.js"></script>
+<script src="./modalWindow.js"></script>
