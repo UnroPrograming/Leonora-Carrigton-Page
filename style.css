@@ -414,6 +414,33 @@
         color: #f5f2ec;
     }
 
+    .zona-click {
+      position: fixed;
+      top: 0;
+      height: 100vh;
+      width: 25%; /* un cuarto de la pantalla */
+      z-index: 50;
+      cursor: pointer;
+    }
+    .zona-click:hover {
+      background: linear-gradient(
+        to var(--dir),
+        rgba(97, 96, 96, 0.336),
+        transparent
+      );
+    }
+
+    .zona-izq {
+      left: 0;
+      --dir: right;
+    }
+
+    .zona-der {
+      right: 0;
+      --dir: left;
+    }
+
+
     /* Animación sutil para el cambio de página */
     @keyframes fadeIn {
         from { opacity: 0; transform: translateY(5px); }

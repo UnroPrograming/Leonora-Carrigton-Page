@@ -20,8 +20,8 @@ function mostrar(sec, pag) {
   document.querySelector(selector).classList.add('activa');
 
   // Actualizar indicador
-  document.getElementById('indicador').textContent =
-      `${secciones[sec].id} · ${pag + 1} / ${secciones[sec].paginas}`;
+  // document.getElementById('indicador').textContent =
+  //     `${secciones[sec].id} · ${pag + 1} / ${secciones[sec].paginas}`;
 
   // Sincronizar post-its
   document.querySelectorAll('.postit').forEach(el => el.classList.remove('activo'));
@@ -42,7 +42,7 @@ function mostrar(sec, pag) {
   }
 }
 
-document.getElementById('btn-siguiente').addEventListener('click', () => {
+document.getElementById('zona-der').addEventListener('click', () => {
   if (paginaActual < secciones[seccionActual].paginas - 1) {
     paginaActual++;
   } else if (seccionActual < secciones.length - 1) {
@@ -52,7 +52,7 @@ document.getElementById('btn-siguiente').addEventListener('click', () => {
   mostrar(seccionActual, paginaActual);
 });
 
-document.getElementById('btn-anterior').addEventListener('click', () => {
+document.getElementById('zona-izq').addEventListener('click', () => {
   if (paginaActual > 0) {
     paginaActual--;
   } else if (seccionActual > 0) {
