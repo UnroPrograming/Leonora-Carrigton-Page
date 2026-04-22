@@ -13,9 +13,13 @@
       padding: 60px 20px;
       font-family: 'IM Fell English', serif;
 
-      background-image: url('./img/background.jpg');
-      background-size: 100% 100%;
+      background-image: url('./img/background8.jpg');
+      background-size: cover;
       background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      /* background-size: 100% 100%;
+      background-repeat: no-repeat; */
     }
 
     /* Wrapper que contiene post-its + hoja juntos */
@@ -114,16 +118,6 @@
 
     .pagina.fondo-normal {
       background-image: url('./img/fondo.png');
-    }
-
-    /* Capa semitransparente muy sutil para mejorar legibilidad del texto */
-    .pagina::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: rgba(245, 238, 220, 0.08);
-      border-radius: inherit;
-      pointer-events: none;
     }
 
     /* Ocultar todas las páginas por defecto */
