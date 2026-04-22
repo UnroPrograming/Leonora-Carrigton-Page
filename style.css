@@ -27,6 +27,9 @@
       position: relative;
       width: 924px;
       flex-shrink: 0;
+      transform: scale(0.8);
+      transform-origin: top center;
+      margin-bottom: -256px; /* ajusta según el espacio vacío que quede abajo */
     }
 
     /* Banda superior donde viven los post-its*/
