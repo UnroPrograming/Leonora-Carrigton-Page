@@ -10,32 +10,39 @@ let paginaActual  = 0;
 
 
 function mostrar(sec, pag) {
-    // Ocultar todo
-    document.querySelectorAll('.pagina-contenido').forEach(el => {
-        el.classList.remove('activa');
-    });
+  // Ocultar todo
+  document.querySelectorAll('.pagina-contenido').forEach(el => {
+      el.classList.remove('activa');
+  });
 
-    // Mostrar la correcta
-    const selector = `[data-seccion="${secciones[sec].id}"][data-pagina="${pag}"]`;
-    document.querySelector(selector).classList.add('activa');
+  // Mostrar la correcta
+  const selector = `[data-seccion="${secciones[sec].id}"][data-pagina="${pag}"]`;
+  document.querySelector(selector).classList.add('activa');
 
-    // Actualizar indicador
-    document.getElementById('indicador').textContent =
-        `${secciones[sec].id} · ${pag + 1} / ${secciones[sec].paginas}`;
+  // Actualizar indicador
+  document.getElementById('indicador').textContent =
+      `${secciones[sec].id} · ${pag + 1} / ${secciones[sec].paginas}`;
 
-    // Sincronizar post-its
-    document.querySelectorAll('.postit').forEach(el => el.classList.remove('activo'));
-    document.querySelector(`.postit[data-seccion="${secciones[sec].id}"]`)
-        ?.classList.add('activo');
+  // Sincronizar post-its
+  document.querySelectorAll('.postit').forEach(el => el.classList.remove('activo'));
+  document.querySelector(`.postit[data-seccion="${secciones[sec].id}"]`)
+      ?.classList.add('activo');
 
-    //UX: Desplazamiento automático hacia la parte superior de la libreta
-    // const contenedorPrincipal = document.querySelector('.conjunto');
-    // if (contenedorPrincipal) {
-    //     contenedorPrincipal.scrollIntoView({ 
-    //         behavior: 'smooth', // Animación de desplazamiento fluido
-    //         block: 'start'      // Alinea la parte superior del elemento con la ventana
-    //     });
-    // }
+  // Cambiar fondo según sección
+  const pagina = document.querySelector('.pagina');
+  if (secciones[sec].id === 'Portada') {
+    pagina.style.backgroundImage = "url('./img/portada.jpg')";
+    pagina.style.backgroundSize = 'cover';
+    pagina.style.backgroundPosition = 'center';
+    pagina.style.aspectRatio = '736 / 1104'; 
+    document.querySelector('.contenido').style.visibility = 'hidden'; // oculta título y texto
+  } else {
+    pagina.style.backgroundImage = "url('./img/fondo.jpg')";
+    pagina.style.backgroundSize = '100%';
+    pagina.style.backgroundPosition = 'center top';
+    pagina.style.aspectRatio = '995 / 1334'; // proporciones del fondo normal
+    document.querySelector('.contenido').style.visibility = 'visible';
+  }
 }
 
 document.getElementById('btn-siguiente').addEventListener('click', () => {
