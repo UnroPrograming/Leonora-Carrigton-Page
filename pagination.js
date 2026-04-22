@@ -28,19 +28,16 @@ function mostrar(sec, pag) {
   document.querySelector(`.postit[data-seccion="${secciones[sec].id}"]`)
       ?.classList.add('activo');
 
-  // Cambiar fondo según sección
+  // // Cambiar fondo según sección
   const pagina = document.querySelector('.pagina');
+
   if (secciones[sec].id === 'Portada') {
-    pagina.style.backgroundImage = "url('./img/portada.jpg')";
-    pagina.style.backgroundSize = 'cover';
-    pagina.style.backgroundPosition = 'center';
-    pagina.style.aspectRatio = '736 / 1104'; 
-    document.querySelector('.contenido').style.visibility = 'hidden'; // oculta título y texto
+    pagina.classList.remove('fondo-normal');
+    pagina.classList.add('fondo-portada');
+    document.querySelector('.contenido').style.visibility = 'hidden';
   } else {
-    pagina.style.backgroundImage = "url('./img/fondo.jpg')";
-    pagina.style.backgroundSize = '100%';
-    pagina.style.backgroundPosition = 'center top';
-    pagina.style.aspectRatio = '995 / 1334'; // proporciones del fondo normal
+    pagina.classList.remove('fondo-portada');
+    pagina.classList.add('fondo-normal');
     document.querySelector('.contenido').style.visibility = 'visible';
   }
 }

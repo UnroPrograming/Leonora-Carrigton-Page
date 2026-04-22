@@ -103,11 +103,17 @@
       height: 1280px;
       flex-shrink: 0;
 
-      /* Imagen de fondo — sin repetición, cubre toda la hoja */
-      background-image: url('./img/fondo2.png');
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: center top;
+    }
+
+    .pagina.fondo-portada {
+      background-image: url('./img/portada.png');
+    }
+
+    .pagina.fondo-normal {
+      background-image: url('./img/fondo.png');
     }
 
     /* Capa semitransparente muy sutil para mejorar legibilidad del texto */
