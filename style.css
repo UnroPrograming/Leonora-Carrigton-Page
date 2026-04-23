@@ -13,7 +13,7 @@
       padding: 60px 20px;
       font-family: 'IM Fell English', serif;
 
-      background-image: url('./img/background8.jpg');
+      background-image: url('./img/background.png');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -120,7 +120,7 @@
     }
 
     .pagina.fondo-normal {
-      background-image: url('./img/fondo.png');
+      background-image: url('./img/fondo1.png');
     }
 
     /* Ocultar todas las páginas por defecto */
@@ -164,7 +164,7 @@
       width: 120px;
       height: 1px;
       background: linear-gradient(to right, #a0704a, transparent);
-      margin-bottom: 2em;
+      margin-bottom: 1em;
     }
 
     p {
@@ -184,14 +184,7 @@
 
     /* IMAGENES */
     .img-pagina {
-      margin: 2em auto;
       text-align: center;
-    }
-
-    .img-pagina img {
-      max-width: 70%;
-      border-radius: 2px;
-      box-shadow: 2px 4px 12px rgba(0,0,0,0.15);
     }
 
     .img-pagina figcaption {
